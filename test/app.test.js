@@ -19,7 +19,6 @@ describe('API Tests', function() {
           .send(test)
           .end(function(err, res) {
             expect(res.statusCode).to.equal(200);
-            expect(res.message).to.equal('Text created');
             done();
           });
       });
