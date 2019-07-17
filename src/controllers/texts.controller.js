@@ -16,7 +16,7 @@ textsCtrl.createText = async (req,res) => {
         date
     });
     await newText.save();
-    res.json({message: 'Text created'})
+    res.send(newText);
 };
 
 textsCtrl.getText = async (req,res) => {
